@@ -1,0 +1,94 @@
+.yo-imagen { 
+    display: block;        
+    margin: 20px auto;      
+    width: 200px;    
+    max-width: 500px; 
+    height: auto;           
+    border-radius: 15px;    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;       
+
+    
+     border: 12px solid;
+     border-image-source: url('https://www.transparenttextures.com/patterns/golden-paper.png'); 
+     border-image-slice: 20;
+     border-image-repeat: repeat;
+ 
+     
+     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.yo-imagen:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.mi-imagen {
+    display: block;        
+    margin: 20px auto;      
+    width: 200px;    
+    max-width: 500px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;       
+    height: auto;           
+    border-radius: 15px;    
+    box-shadow: 0px 4
+    px 8px rgba(0, 0, 0, 0.3);    
+}
+.mi-imagen:hover {
+    transform: scale(1.3); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+.mi-imagen2 {
+    display: block;        
+    margin: 20px auto;      
+    width: 200px;          
+    height: auto;           
+    border-radius: 15px;    
+    box-shadow: 0px 4
+    px 8px rgba(0, 0, 0, 0.3);    
+}
+
+.mi-boton {
+    background-color: #28a745; 
+    color: white;            
+    font-size: 16px;         
+    padding: 12px 24px;       
+    border-radius: 8px;       
+    border: none;             
+    cursor: pointer;          
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.mi-boton:hover {
+    background-color: #218838;    
+    transform: scale(1.1); 
+    
+}
+
+.boton-secundario {
+    background-color: #ffc107; 
+    color: black;
+}
+
+.boton-secundario:hover {
+    background-color: #e0a800;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #bbf5f5b8 !important; 
+    color: #e90303;
+}
+
+.card {
+    background-color: rgb(241, 241, 241) !important; 
+    border-radius: 10px; 
+    padding: 20px;
+}
+
+
