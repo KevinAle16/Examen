@@ -44,3 +44,68 @@
 .table tbody tr td:last-child {
     border-right: none;
 }
+
+/* Contenedor para el select con label flotante */
+.form-floating {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Estilo para el select */
+#floatingSelect, #lista {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    appearance: none;
+    position: relative;
+}
+
+/* Flecha personalizada */
+#floatingSelect, #lista {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23007bff" d="M2 0L0 2h4zM2 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Cambia el color cuando el usuario pase el mouse */
+#floatingSelect:hover, #lista:hover {
+    background-color: #e9ecef;
+}
+
+/* Efecto cuando el select está enfocado */
+#floatingSelect:focus, #lista:focus {
+    border-color: #0056b3;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo del label flotante */
+label[for="floatingSelect"] {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 14px;
+    color: #6c757d;
+    background: white;
+    padding: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mueve el label cuando el select está enfocado o tiene un valor */
+#floatingSelect:focus + label, #lista:focus + label,
+#floatingSelect:not(:placeholder-shown) + label, #lista:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+

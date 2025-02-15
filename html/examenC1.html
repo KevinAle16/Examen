@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id = "head_contenido"></head>
+<head id="head_contenido"></head>
 
 <body>
     <div class="container">
-
         <main>
-            <div id="header_contenido">
-
-            </div>
+            <div id="header_contenido"></div>
             <div class="card">
-                <img src="/img/.jpg" class="mi-imagen2" alt="Examen" style="width: 15rem;">
+              <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+                <img src="/img/libro.jpg" class="mi-imagen2" alt="Libro" style="width: 15rem;" id="imagen">
                 <div class="card-body">
                   <center>
-                  <h5 class="card-title">Examen corte I</h5>
+                  <h5 class="card-title">Lista de Libros de Stephen King</h5>
                   <p class="card-text"></p>
+                  <div class="form-floating">
+                    <select class="form-select" id="selectLibro" aria-label="Seleccionar un libro">
+                      <option selected>Seleccione un libro</option> 
+                    </select>
+                  </div>
                   <button id="btnBuscar" type="button" class="mi-boton">Buscar</button>
-                  <input type="text" placeholder="Nombre del coctel" id="txtCoctel">
                   <button id="limpiar" type="button" class="mi-boton">Limpiar</button>
                   <br><br>
-                  
-                    <h2> </h2>
+                    <h2>Detalles del Libro</h2>
                     <br>
                     <table class="table" id="table">
                         <thead>
                           <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Ingredientes</th>
-                            <th scope="col">Receta</th>
-                            <th scope="col"></th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Año</th>
+                            <th scope="col">Paginas</th>
+                            <th scope="col">Editorial</th>
                           </tr>
                         </thead>
-                        <tbody id ="tbody">
-
-                        </tbody>
-                      </table>
-                  
+                        <tbody id="tbody"></tbody>
+                    </table>
                   <hr>
-                  <img src="/img/" class="mi-imagen" alt="" id="">
-                     </center>
-
+                  <img src="/img/libro.jpg" class="mi-imagen" alt="libro" id="libro">
+                  </center>
                   <p id="mensaje" class="card-text"></p>
                 </div>
             </div>
         </main>
-
-    <footer>
-        <div id="footer_contenido">
-
-        </div>
-    </footer>
+        <footer>
+            <div id="footer_contenido"></div>
+        </footer>
     </div>
-</body>
-    <script src="/js/partials.js"></script>
-    <script src="/js/examenC1.js"></script>
+<script src="/js/partials.js"></script>
+<script src="/js/examenC1.js"></script>
 </html>
